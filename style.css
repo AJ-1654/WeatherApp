@@ -1,0 +1,40 @@
+hr.short {
+    width: 100px;
+    border-bottom: 2px solid #fff;
+}
+
+.main {
+    color: white;
+    background-size: cover;
+    height: 460px;
+}
+
+img {
+    object-fit: contain;
+}
+
+.info {
+    margin-top: 100px;
+}
+
+hr.below {
+    width: 50px;
+    border-bottom: 1px solid #fff;
+}
+
+.top {
+    background: linear-gradient(145deg, #0d47a1, #42a5f5);
+    color: #fff;
+    border-radius: 0px !important;
+    height: 300px;
+    margin: 0;
+}
+
+#info1,
+#info2 {
+    font-size: 30px;
+}
+
+#info3 {
+    font-size: 60px;
+}
