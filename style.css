@@ -30,7 +30,9 @@ hr.below {
     margin: 0;
 }
 
-#info1,
+#info1 {
+      font-size: 30px;
+}
 #info2 {
     font-size: 30px;
 }
