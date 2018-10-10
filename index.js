@@ -38,7 +38,7 @@ $(document).ready(function () {
                         $('#switch').html('Show in Farenheit');
                     }
                 });
-                if (cloud <= 30) {
+                if (cloud <= 25) {
                     $('#info5').html('Clear Sky');
                     $('.main').css({
                         backgroundImage: 'url(https://cdn.pixabay.com/photo/2014/10/03/16/52/natural-471949__340.jpg)'
