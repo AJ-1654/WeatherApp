@@ -7,18 +7,18 @@ $(document).ready(function () {
             currentPosition = position;
             var lat = currentPosition.coords.latitude;
             var long = currentPosition.coords.longitude;
-            var url = 'http://api.weatherstack.com/current?access_key=71756be25b9c73e9a68835deff527f2b&query=';
+            var url = 'https://api.weatherapi.com/v1/current.json?key=a088160feeae426fbd680403212604&q=';
             $.getJSON(url + lat + ',' + long, function (data) {
                 var country = data.location.country;
                 var city = data.location.name;
                 var state = data.location.region;
-                var temp = data.current.temperature;
-                var tempf = temp * 9/5 + 32; 
-                var lastUpdated = data.current.observation_time;
-                var wind = data.current.wind_speed;
+                var temp = data.current.temp_c;
+                var tempf = data.current.temp_f; 
+                var lastUpdated = data.current.last_updated;
+                var wind = data.current.wind_kph;
                 var humidity = data.current.humidity;
                 var time = data.location.localtime.split(' ')[1];
-                var cloud = data.current.cloudcover;
+                var cloud = data.current.cloud;
                 $('.short').show();
                 $('#switch').show();
                 $('#weather').html(city + ', ' + state + ', ' + country);
