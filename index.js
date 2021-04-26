@@ -7,7 +7,7 @@ $(document).ready(function () {
             currentPosition = position;
             var lat = currentPosition.coords.latitude;
             var long = currentPosition.coords.longitude;
-            var url = 'https://api.apixu.com/v1/current.json?key=bda2228b67104986ac794643182309&q=';
+            var url = 'http://api.weatherstack.com/current?access_key=71756be25b9c73e9a68835deff527f2b&query=';
             $.getJSON(url + lat + ',' + long, function (data) {
                 var country = data.location.country;
                 var city = data.location.name;
